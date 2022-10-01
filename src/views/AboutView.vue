@@ -19,7 +19,7 @@
         <v-row class="ma-0">
           <v-col class="d-flex justify-center pa-0">
             <p class="dontMissText ma-0">
-              Don’t miss your chance to win one of our NFTs
+              Don't miss your chance to win one of our NFTs
             </p>
           </v-col>
         </v-row>
@@ -32,15 +32,13 @@
         </v-row>
         <v-row class="ma-0 mb-10">
           <v-col class="pa-0">
-            <p class="completeText">
-              Complete the following steps to enter
-            </p>
+            <p class="completeText">Complete the following steps to enter</p>
           </v-col>
         </v-row>
         <v-row class="ma-0 d-flex align-center justify-space-between">
           <v-col class="pa-0" cols="7">
             <v-card class="fakeAccordion pa-4" color="#3a3636">
-              <h1>Your Accordion</h1>
+              <sweep-widget></sweep-widget>
             </v-card>
           </v-col>
           <v-col class="pa-0 goldenHelmetBox">
@@ -96,8 +94,19 @@
   </v-container>
 </template>
 
+<script>
+import SweepWidget from "@/components/SweepWidget.vue";
+
+export default {
+  name: "AboutView",
+  components: {
+    SweepWidget,
+  },
+};
+</script>
+
 <style>
-*{
+* {
   font-family: "Domine";
   font-style: normal;
   color: #ffffff;
@@ -172,7 +181,6 @@
   font-size: 65px;
   line-height: 57px;
 
-  
   margin: 180px 0 40px !important;
 }
 
@@ -269,7 +277,6 @@ img.image {
     font-weight: 400;
     font-size: 18px;
     line-height: 34px;
-    
   }
 
   .downIcon {
