@@ -135,14 +135,13 @@ body {
 
 .goldenCar {
   width: 50%;
-  min-width: 400px;
   top: -15vw;
   position: absolute;
 }
 
 .joinText {
   font-weight: 700;
-  font-size: 105px;
+  font-size: 6.5vw;
   color: #d81159;
 
   margin: 16vw 0 -20px !important;
@@ -150,24 +149,24 @@ body {
 
 .dontMissText {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5vw;
   line-height: 34px;
 }
 
 .downIcon {
-  margin: 120px 0;
+  margin: 7.5vw 0;
 }
 
 .v-icon.v-icon {
-  font-size: 80px;
+  font-size: 5vw;
 }
 
 .completeText {
   font-weight: 700;
-  font-size: 65px;
+  font-size: 4vw;
   line-height: 57px;
 
-  margin-bottom: 56px !important;
+  margin-bottom: 3.5vw !important;
 }
 
 .fakeAccordionBox {
@@ -176,7 +175,7 @@ body {
 
 .fakeAccordion {
   border-radius: 12px !important;
-  height: 500px;
+  height: 30vw;
   width: 50vw;
   overflow-y: scroll;
 }
@@ -191,16 +190,16 @@ body {
 
 .nftText {
   font-weight: 700;
-  font-size: 65px;
+  font-size: 4vw;
   line-height: 57px;
 
-  margin: 180px 0 40px !important;
+  margin: 11vw 0 2.5vw !important;
 }
 
 .allBannersBox {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 13vw;
 }
 
 .bannerBox {
@@ -209,12 +208,12 @@ body {
 }
 
 .rectangle {
-  border-top: solid 28px #d0ad46;
-  height: 700px;
+  border-top: solid 1.75vw #d0ad46;
+  height: 44vw;
   background-color: #3a3636;
   position: relative;
 
-  padding: 44px 28px;
+  padding: 2.5vw 1.75vw;
 }
 
 .triangle {
@@ -223,17 +222,17 @@ body {
   border-left: 12vw solid transparent;
   border-right: 12vw solid transparent;
 
-  border-top: 160px solid #3a3636;
+  border-top: 10vw solid #3a3636;
 }
 
 .nftName {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5vw;
   line-height: 34px;
 }
 
 .helmetNFT {
-  height: 450px;
+  height: 30vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -242,7 +241,7 @@ body {
 }
 
 .shieldNFT {
-  height: 300px;
+  height: 20vw;
   position: absolute;
   top: 50%;
   left: 55.5%;
@@ -251,7 +250,7 @@ body {
 }
 
 .swordNFT {
-  height: 450px;
+  height: 30vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -398,6 +397,18 @@ img.image {
     font-weight: 400;
     font-size: 10vw;
     line-height: 9vw;
+  }
+
+  .helmetNFT {
+    height: 130vw;
+  }
+
+  .shieldNFT {
+    height: 120vw;
+  }
+
+  .swordNFT {
+    height: 130vw;
   }
 }
 </style>
