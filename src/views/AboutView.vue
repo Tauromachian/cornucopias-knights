@@ -19,7 +19,7 @@
         <v-row class="ma-0">
           <v-col class="d-flex justify-center pa-0">
             <p class="dontMissText ma-0">
-              Don’t miss your chance to win one of our NFTs
+              Don't miss your chance to win one of our NFTs
             </p>
           </v-col>
         </v-row>
@@ -37,9 +37,10 @@
         </v-row>
         <v-row class="ma-0 d-flex align-center justify-space-between">
           <v-col class="pa-0 fakeAccordionBox">
-            <v-card class="fakeAccordion pa-4" color="#3a3636">
+            <!-- <v-card class="fakeAccordion pa-4" color="#3a3636">
               <h1>Your Accordion</h1>
-            </v-card>
+            </v-card> -->
+            <sweep-widget class="fakeAccordion pa-4"></sweep-widget>
           </v-col>
           <v-col class="pa-0 goldenHelmetBox">
             <img
@@ -94,6 +95,17 @@
   </v-container>
 </template>
 
+<script>
+import SweepWidget from "@/components/SweepWidget.vue";
+
+export default {
+  name: "AboutView",
+  components: {
+    SweepWidget,
+  },
+};
+</script>
+
 <style>
 * {
   font-family: "Domine";
@@ -101,8 +113,7 @@
   color: #ffffff;
 }
 
-body{
-  
+body {
   overflow-x: hidden;
 }
 
@@ -167,6 +178,7 @@ body{
   border-radius: 12px !important;
   height: 500px;
   width: 50vw;
+  overflow-y: scroll;
 }
 
 .goldenHelmetBox {
