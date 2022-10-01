@@ -37,9 +37,7 @@
         </v-row>
         <v-row class="ma-0 d-flex align-center justify-space-between">
           <v-col class="pa-0" cols="7">
-            <v-card class="fakeAccordion pa-4" color="#3a3636">
-              <sweep-widget></sweep-widget>
-            </v-card>
+            <sweep-widget></sweep-widget>
           </v-col>
           <v-col class="pa-0 goldenHelmetBox">
             <img
