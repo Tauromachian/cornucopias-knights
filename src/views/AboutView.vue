@@ -13,7 +13,7 @@
         </v-row>
         <v-row class="ma-0">
           <v-col class="d-flex justify-center pa-0">
-            <p class="joinText mb-n5">Join Now!</p>
+            <p class="joinText">Join Now!</p>
           </v-col>
         </v-row>
         <v-row class="ma-0">
@@ -30,15 +30,13 @@
             >
           </v-col>
         </v-row>
-        <v-row class="ma-0 mb-10">
+        <v-row class="ma-0">
           <v-col class="pa-0">
-            <p class="completeText">
-              Complete the following steps to enter
-            </p>
+            <p class="completeText">Complete the following steps to enter</p>
           </v-col>
         </v-row>
         <v-row class="ma-0 d-flex align-center justify-space-between">
-          <v-col class="pa-0" cols="7">
+          <v-col class="pa-0 fakeAccordionBox">
             <v-card class="fakeAccordion pa-4" color="#3a3636">
               <h1>Your Accordion</h1>
             </v-card>
@@ -58,7 +56,7 @@
         </v-row>
         <v-row class="mx-0 mt-0 allBannersBox">
           <v-col class="pa-0 bannerBox">
-            <div class="rectangle px-7 py-11">
+            <div class="rectangle">
               <p class="nftName">Helmet</p>
               <img
                 src="../assets/images/HeadGearTransparent_1.png"
@@ -69,7 +67,7 @@
             <div class="triangle"></div>
           </v-col>
           <v-col class="pa-0 bannerBox">
-            <div class="rectangle px-7 py-11">
+            <div class="rectangle lastTwo">
               <p class="nftName">Shield</p>
               <img
                 src="../assets/images/CornucopiasShield.png"
@@ -80,7 +78,7 @@
             <div class="triangle"></div>
           </v-col>
           <v-col class="pa-0 bannerBox">
-            <div class="rectangle px-7 py-11">
+            <div class="rectangle lastTwo">
               <p class="nftName">Sword</p>
               <img
                 src="../assets/images/SwordRenderStatic2.png"
@@ -97,10 +95,15 @@
 </template>
 
 <style>
-*{
+* {
   font-family: "Domine";
   font-style: normal;
   color: #ffffff;
+}
+
+body{
+  
+  overflow-x: hidden;
 }
 
 /* .row{                                 Necesito hacer commit para probar si esto sirve o no
@@ -131,7 +134,7 @@
   font-size: 105px;
   color: #d81159;
 
-  margin-top: 16vw;
+  margin: 16vw 0 -20px !important;
 }
 
 .dontMissText {
@@ -152,11 +155,18 @@
   font-weight: 700;
   font-size: 65px;
   line-height: 57px;
+
+  margin-bottom: 56px !important;
+}
+
+.fakeAccordionBox {
+  flex-grow: 0;
 }
 
 .fakeAccordion {
   border-radius: 12px !important;
   height: 500px;
+  width: 50vw;
 }
 
 .goldenHelmetBox {
@@ -172,7 +182,6 @@
   font-size: 65px;
   line-height: 57px;
 
-  
   margin: 180px 0 40px !important;
 }
 
@@ -192,6 +201,8 @@
   height: 700px;
   background-color: #3a3636;
   position: relative;
+
+  padding: 44px 28px;
 }
 
 .triangle {
@@ -252,32 +263,129 @@ img.image {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
+  .yourView {
+    padding: 0 3vw;
+  }
+
   .goldenCar {
-    top: -25vw;
+    width: 130%;
+    min-width: 100px;
+    top: -45vw;
+    position: absolute;
   }
 
   .joinText {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 20vw;
     color: #d81159;
 
-    margin: 40vw 0 -30px;
+    margin: 32.5vw 0 -6vw !important;
   }
 
   .dontMissText {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 34px;
-    
+    font-size: 6vw;
+    line-height: 8vw;
+
+    padding: 0 3vw;
   }
 
   .downIcon {
-    margin: 60px 0;
+    margin: 17vw 0;
   }
 
   .v-icon.v-icon {
-    font-size: 60px;
+    font-size: 17vw;
+  }
+
+  .completeText {
+    font-weight: 700;
+    font-size: 9vw;
+    line-height: 9vw;
+
+    padding: 0 3vw;
+    margin-bottom: 3vw !important;
+  }
+
+  .fakeAccordionBox {
+    flex-grow: 0;
+  }
+
+  .fakeAccordion {
+    border-radius: 12px !important;
+    height: 500px;
+    width: 100vw;
+  }
+
+  .goldenHelmetBox {
+    flex-grow: 0;
+    margin: 10vw auto 0;
+  }
+
+  .goldenHelmet {
+    width: 45vw;
+  }
+
+  .nftText {
+    font-weight: 700;
+    font-size: 9vw;
+    line-height: 9vw;
+
+    padding: 0 3vw;
+    margin: 15vw 0 4vw !important;
+  }
+
+  .allBannersBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20vw;
+  }
+
+  .bannerBox {
+    width: 94vw;
+    flex-grow: 0;
+  }
+
+  .rectangle {
+    border-top: solid 6vw #d0ad46;
+    height: 175vw;
+    background-color: #3a3636;
+    position: relative;
+
+    padding: 9vw 6vw;
+  }
+
+  .lastTwo {
+    border-top: none;
+    margin-top: -50vw;
+    padding: 12vw 6vw;
+    position: relative;
+  }
+
+  .lastTwo::after {
+    content: "";
+    border-top: solid 3vw #d0ad46;
+    position: absolute;
+    top: 0;
+    left: 7vw;
+    right: 7vw;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 47vw solid transparent;
+    border-right: 47vw solid transparent;
+
+    border-top: 40vw solid #3a3636;
+  }
+
+  .nftName {
+    font-weight: 400;
+    font-size: 10vw;
+    line-height: 9vw;
   }
 }
 </style>
