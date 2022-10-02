@@ -36,10 +36,14 @@
           </v-col>
         </v-row>
         <v-row class="ma-0 d-flex align-center justify-space-between">
-          <v-col>
+          <v-col cols="12" md="6">
             <sweep-widget></sweep-widget>
           </v-col>
-          <v-col class="pa-0 goldenHelmetBox">
+          <v-col
+            cols="12"
+            md="6"
+            class="pa-0 goldenHelmetBox d-flex justify-center"
+          >
             <img
               src="../assets/images/Gold_Logo_no_text.png"
               class="goldenHelmet"
